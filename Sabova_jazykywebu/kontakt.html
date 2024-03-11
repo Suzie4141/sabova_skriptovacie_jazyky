@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head> <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo" height="15" class="img-fluid logo-image">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="in.html">DOMOV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Svet.html">SVET</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="slovensko.html">SLOVENSKO</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">KONTAKT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">GALÉRIA</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <h3 class="mt-4 mb-4 text-center">Kontakt</h3>
+    
+            <form action="dakujem.html" method="post">
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                        <label for="meno">Meno:</label>
+                        <input type="text" class="form-control" id="meno" name="meno" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="priezvisko">Priezvisko:</label>
+                        <input type="text" class="form-control" id="priezvisko" name="priezvisko" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required title="Prosím, zadajte platnú e-mailovú adresu">
+                </div>
+                <div class="form-group">
+                    <label for="sprava">Textové pole:</label>
+                    <textarea class="form-control" id="sprava" name="sprava" rows="3"></textarea>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="suhasim" name="suhasim" required>
+                    <label class="form-check-label" for="suhasim">Súhlasím so spracovaním svojich osobných údajov.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Odoslať</button>
+            </form>
+        </div>
+        <footer class="bg-dark text-light py-3px">
+            <div class="container-fluid mt-4 mx-auto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Logo -->
+                        <img src="img/logo.png" alt="Logo" height="70" width="70" class="img-fluid">
+                        <!-- Copyright informácie -->
+                        <h4>Cesta za Horizont</h4>
+                        <p class=" mb-0">&copy; 2023 Všetky práva vyhradené</p>
+                        <p>Vytvorila: Zuzana Sabová</p>
+                    </div>
+                <div class="col-md-6  text-md-left">
+                    <p><h5 class="mb-0">Kontaktné údaje</h5></p>
+                    <p>Email: <a href="mailto:">cestazahorizont@email.com</a></p>
+                    <p>Mobil: <a href="tel:">+421908654382</a></p></div>
+                </div>
+            </div>
+        </footer>
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
